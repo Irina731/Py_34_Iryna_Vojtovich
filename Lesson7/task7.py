@@ -13,6 +13,7 @@ client_basa = {"123456": ('Irina',35),
 
 client_basa_json = json.dumps(client_basa)
 
-with open ('client_basa_json','wt', newline= '\n') as f:
+with open ('client_basa_json_1.json','w') as f:
     f.write(client_basa_json)
-    print(client_basa_json)
+with open ('client_basa_json_1.json',"r") as f:
+    print(f.read())

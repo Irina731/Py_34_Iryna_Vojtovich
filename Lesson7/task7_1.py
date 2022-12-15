@@ -4,14 +4,10 @@
 import json
 import csv
 
-with open("client_basa_json.json","r") as f:
-    data = json.loads(j.read())
-    keys = list(data.keys())
-    values = list(data.values())
-    print(key)
-    print(values)
+with open("client_basa_json_1.json","r") as f:
+    json_f = f.read()
+    print(json_f)
 
-    with open ("data.csv" ,"w") as csvf:
-        writer =csv.writer(csvf)
-        writer.writerow(keys)
-        writer.writerow(value)
+
+     with open ("data.csv" ,"w") as csvf:
+         writer =csv.writer(csvf)
